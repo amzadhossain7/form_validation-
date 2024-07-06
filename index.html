@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+
+
+    <title>form validation</title>
+</head>
+<body>
+    
+<section class="form_validation form_section">
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class=" col-md-6 ">
+            <form action="#" class="needs-validation form_v" novalidate>
+
+              <div class="mb-3">
+                <label for="full_name" class="form-label">Full name</label>
+                <input type="text" class="form-control full_name" id="full_name" name="full_name" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  please submit your full name
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="email_address" class="form-label">Email_address</label>
+                <input type="email" class="form-control email_address" id="email_address" name="email_address" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  please submit your email address
+                </div>
+              </div>
+
+              <button class="btn btn-dark" type="submit">Submit</button>
+              <button class="btn btn-danger" type="reset">Reset</button>
+
+           </form>
+          </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- js link  -->
+     <script src="js/script.js"></script>
+   <script src="js/jquery-3.7.1.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
